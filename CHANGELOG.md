@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.2] - 2026-07-17
+
+Fleet follow-up to stapel-core 0.12.0 (legacy shim sweep). Also re-pins
+`stapel-profiles`'s ceiling — it had a breaking bump to 0.4.0 since
+0.1.1, outside this composite's old `<0.4` ceiling. Suite green.
+
+### Changed
+- `stapel-core` ceiling `<0.12` → `<0.13`.
+- `stapel-profiles` ceiling `<0.4` → `<0.5`.
+
 ## [0.1.1] - 2026-07-17
 
 ### Changed
