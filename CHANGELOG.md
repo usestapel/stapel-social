@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.4] - 2026-08-02
+
+Packaging/docs catch-up, no behavior change:
+
+- Canonical `ci.yml` with coverage + `codecov.yml`, Python 3.14
+  classifier, badge canon.
+- `docs/llms.txt` — the fifth contract artifact (badge-canon §3),
+  rendered from the curated (hand-authored) `docs/capabilities.json` by
+  `stapel_tools.llms_txt`; `capabilities.json`'s `version` field brought
+  in sync with `pyproject.toml` (0.1.2 → 0.1.4), no other change to its
+  hand-authored content.
+
 ## [0.1.2] - 2026-07-17
 
 Fleet follow-up to stapel-core 0.12.0 (legacy shim sweep). Also re-pins
