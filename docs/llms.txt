@@ -1,0 +1,11 @@
+# stapel-social 0.1.2
+
+Composite preset for a social surface around any entity: wires stapel-chat (messaging), stapel-profiles (user profiles) and stapel-reviews into one INSTALLED_APPS/urls/config bundle. Mounts no urls and writes no business logic of its own (preset.py).
+
+Contract: (no catalogued surface).
+Generated from docs/capabilities.json by `stapel-llms-txt` — do not edit; drift-gated by `make contract-check`.
+
+## Fits with — fleet dependencies
+- stapel-chat (required) — composite member — chat/messaging (preset.py INSTALLED_APPS/URL_INCLUDES)
+- stapel-profiles (required) — composite member — user profiles (preset.py INSTALLED_APPS/URL_INCLUDES)
+- stapel-reviews (required) — composite member — reviews of any entity in the social surface (preset.py INSTALLED_APPS/URL_INCLUDES)

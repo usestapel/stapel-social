@@ -2,6 +2,7 @@
 
 [![license](https://img.shields.io/github/license/usestapel/stapel-social)](https://github.com/usestapel/stapel-social/blob/main/LICENSE)
 [![status](https://img.shields.io/badge/status-unreleased-orange)](https://github.com/usestapel/stapel-social)
+[![llms.txt](https://img.shields.io/badge/llms.txt-blue)](https://github.com/usestapel/stapel-social/blob/main/docs/llms.txt)
 
 Не опубликовано на PyPI. Установка из исходников: `pip install git+https://github.com/usestapel/stapel-social`
 Composite: social surface — chat + profiles + reviews.
