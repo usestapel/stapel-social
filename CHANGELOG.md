@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.5] - 2026-08-02
+
+Fix-up: 0.1.4's `publish.yml` test gate installed `pytest`/`pytest-django`
+only, unlike `ci.yml` — it never picked up `stapel-tools`, so the new
+`docs/llms.txt` drift/determinism tests in `tests/test_contract.py`
+failed at the tag-triggered publish workflow (0.1.4 never reached
+PyPI). `publish.yml` now installs `stapel-tools` the same way `ci.yml`
+does. No other change.
+
 ## [0.1.4] - 2026-08-02
 
 Packaging/docs catch-up, no behavior change:
