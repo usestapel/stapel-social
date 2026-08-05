@@ -21,5 +21,6 @@
       "optional": false,
       "reason": "composite member — reviews of any entity in the social surface (preset.py INSTALLED_APPS/URL_INCLUDES)"
     }
-  ]
+  ],
+  "surface": []
 }
