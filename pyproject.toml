@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stapel-social"
-version = "0.1.5"
+version = "0.1.6"
 description = "Composite: social surface — chat + profiles + reviews"
 readme = "README.md"
 license = { text = "MIT" }
@@ -26,9 +26,9 @@ classifiers = [
 # STAPEL_LIBS registry / each member lib already uses, fixing the combination.
 dependencies = [
     "stapel-core>=0.10,<1.0",
-    "stapel-chat>=0.1,<0.2",
-    "stapel-profiles>=0.3,<0.5",
-    "stapel-reviews>=0.1,<0.2",
+    "stapel-chat>=0.10,<1.0",
+    "stapel-profiles>=0.22,<1.0",
+    "stapel-reviews>=0.7,<1.0",
 ]
 
 [project.urls]

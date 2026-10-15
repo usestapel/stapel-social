@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.6] - 2026-10-15
+
+Packaging only. Patch: the sibling ceilings were raised to the leaf-composite
+convention (`>=<current major.minor>,<1.0`), so the package installs next to
+the current releases of its siblings. No code change.
+
 ## [0.1.5] - 2026-08-02
 
 Fix-up: 0.1.4's `publish.yml` test gate installed `pytest`/`pytest-django`

@@ -24,7 +24,7 @@ pip install stapel-social
 
 | Fact | Value |
 |---|---|
-| Version | `0.1.5` |
+| Version | `0.1.6` |
 | Python | `>=3.11` (3.11, 3.12, 3.13, 3.14) |
 | Fleet dependencies | [`stapel-chat`](https://github.com/usestapel/stapel-chat) · [`stapel-profiles`](https://github.com/usestapel/stapel-profiles) · [`stapel-reviews`](https://github.com/usestapel/stapel-reviews) |
 
