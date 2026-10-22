@@ -40,9 +40,14 @@ SETTINGS_DEFAULTS = {
                 "moderation": "post",
                 "one_per_author": True,
                 "allow_response": True,
+                # A profile's target_key is its user id, so the profile IS its
+                # owner: that user may reply to reviews of it and may not
+                # review it (stapel-reviews allow_self_review defaults off).
+                "owner_key_for": "reviews.owner_is_target",
                 # Host policy callbacks (comm Functions) are None by default:
-                # any authenticated user may review. Register and name your
-                # own "can_review"/"can_moderate" Functions to restrict.
+                # any authenticated user may review, nobody may hide. Name
+                # your own "can_review"/"can_moderate"/"can_respond"
+                # Functions to restrict or widen.
             },
         },
     },

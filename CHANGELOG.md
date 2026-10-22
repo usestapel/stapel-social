@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.7] - 2026-10-22
+
+### Fixed — a profile's owner can reply to its reviews
+
+The `profile` target type declared `allow_response: True` with no way for
+anybody to reply: stapel-reviews gated replies on `can_moderate`, which the
+preset leaves unset (fail-closed). With stapel-reviews 0.8 (now the floor) the
+type names `owner_key_for: "reviews.owner_is_target"` — a profile's target key
+is its user id — so that user may reply, nobody else may hide, and a user can
+no longer review their own profile.
+
 ## [0.1.6] - 2026-10-15
 
 Packaging only. Patch: the sibling ceilings were raised to the leaf-composite

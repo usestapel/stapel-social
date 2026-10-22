@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "stapel-social"
-version = "0.1.6"
+version = "0.1.7"
 description = "Composite: social surface — chat + profiles + reviews"
 readme = "README.md"
 license = { text = "MIT" }
@@ -28,7 +28,9 @@ dependencies = [
     "stapel-core>=0.10,<1.0",
     "stapel-chat>=0.10,<1.0",
     "stapel-profiles>=0.22,<1.0",
-    "stapel-reviews>=0.7,<1.0",
+    # 0.8: can_respond / owner replies and the reviews.owner_is_target
+    # resolver the profile type names.
+    "stapel-reviews>=0.8,<1.0",
 ]
 
 [project.urls]
