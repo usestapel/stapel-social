@@ -24,7 +24,7 @@ pip install stapel-social
 
 | Fact | Value |
 |---|---|
-| Version | `0.1.7` |
+| Version | `0.1.8` |
 | Python | `>=3.11` (3.11, 3.12, 3.13, 3.14) |
 | Fleet dependencies | [`stapel-chat`](https://github.com/usestapel/stapel-chat) · [`stapel-profiles`](https://github.com/usestapel/stapel-profiles) · [`stapel-reviews`](https://github.com/usestapel/stapel-reviews) |
 
@@ -55,8 +55,9 @@ from stapel_social import preset
 
 INSTALLED_APPS = [
     # ... django/stapel-core baseline (incl. stapel_core.django.projections)
-    "stapel_chat",
     "stapel_profiles",
+    "stapel_realtime",
+    "stapel_chat",
     "stapel_reviews",
     "stapel_social",
 ]

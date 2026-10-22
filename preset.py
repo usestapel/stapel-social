@@ -10,9 +10,15 @@ a hand-written settings.py/urls.py copies from instead.
 
 # Dotted app paths, in mount order. L1 libraries (stapel-attributes) are pip
 # dependencies, NOT Django apps — deliberately absent here.
+#
+# stapel_realtime is chat's WebSocket substrate: stapel_chat.E010 refuses to
+# boot without it. The host still supplies CHANNEL_LAYERS, the "channels"
+# signal transport and an ASGI router (stapel_realtime.asgi
+# build_websocket_application); see stapel-realtime's README.
 INSTALLED_APPS = [
-    "stapel_chat",
     "stapel_profiles",
+    "stapel_realtime",
+    "stapel_chat",
     "stapel_reviews",
     "stapel_social",
 ]

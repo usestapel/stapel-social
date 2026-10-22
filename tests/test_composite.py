@@ -44,3 +44,10 @@ def test_refusal_envelope_is_wired_in_this_harness():
     # ``stapel_core.django.exception_handler_checks`` (core 0.61.1) so the
     # test runs on this package's declared stapel-core floor.
     assert api_settings.EXCEPTION_HANDLER is stapel_exception_handler
+
+
+def test_chat_brings_its_realtime_substrate():
+    """stapel_chat.E010 refuses a host without stapel_realtime; the preset a
+    hand-wired host copies installs it, before chat."""
+    apps = preset.INSTALLED_APPS
+    assert apps.index("stapel_realtime") < apps.index("stapel_chat")

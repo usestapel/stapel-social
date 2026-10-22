@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.8] - 2026-10-22
+
+### Fixed — chat's realtime substrate is a member
+
+`stapel_realtime` joins INSTALLED_APPS, before `stapel_chat`. Chat serves its
+messages over WebSocket and `stapel_chat.E010` refuses to boot without the
+substrate, so a host that copied the preset did not start. The host still
+supplies the channel layer, the `"channels"` signal transport and the ASGI
+router (stapel-realtime's README); a generated project gets all three from
+stapel-tools. The order now matches the scaffold's (profiles first), held
+equal by `stapel-preset-gate`.
+
 ## [0.1.7] - 2026-10-22
 
 ### Fixed — a profile's owner can reply to its reviews

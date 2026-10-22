@@ -21,8 +21,9 @@ from stapel_social import preset
 
 INSTALLED_APPS = [
     # ... django/stapel-core baseline (incl. stapel_core.django.projections)
-    "stapel_chat",
     "stapel_profiles",
+    "stapel_realtime",
+    "stapel_chat",
     "stapel_reviews",
     "stapel_social",
 ]
